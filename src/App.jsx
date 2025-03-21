@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import RootLayout from './components/RootLayout';
 import Books from './pages/Books';
+import BookDetails from './pages/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> }, // Default page
       { path: 'about', element: <About /> },
       { path: 'books', element: <Books /> }, 
+      { path: 'books/:id', element: <BookDetails /> },
       { path: 'contact', element: <Contact /> },
       
     ],
